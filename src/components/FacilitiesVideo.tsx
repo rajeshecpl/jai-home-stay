@@ -1,5 +1,4 @@
 import { Play } from "lucide-react";
-import facilitiesVideo from "@/assets/facilities-video.mp4";
 
 const FacilitiesVideo = () => {
   return (
@@ -17,15 +16,13 @@ const FacilitiesVideo = () => {
 
         <div className="max-w-4xl mx-auto animate-fade-in">
           <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-            <video
-              controls
-              preload="metadata"
-              className="w-full aspect-video bg-black"
-              poster=""
-            >
-              <source src={facilitiesVideo} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <iframe
+              className="w-full aspect-video"
+              src="https://www.youtube.com/embed/FnC-sPXn-U0"
+              title="Facilities Virtual Tour"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
           </div>
           <p className="text-center text-muted-foreground mt-4 text-sm">
             <Play className="inline h-4 w-4 mr-1" />
